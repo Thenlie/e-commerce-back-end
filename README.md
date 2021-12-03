@@ -17,14 +17,16 @@
 
   ## Installation
 
-  After cloning the repository use the command `npm i` to install all npm dependencies. From there you will want to open your SQL command line and use the command `source db/schema.sql` to create the e-commerce database. You can then exit out of the SQL command line. Back in bash, use the command `npm run seed` to seed the newly create
+  After cloning the repository use the command `npm i` to install all npm dependencies. From there you will want to open your SQL command line and use the command `source db/schema.sql` to create the e-commerce database. You can then exit out of the SQL command line. Back in bash, use the command `npm run seed` to seed the newly created database. Finally, create a `.env` file in the root of your project directory. Add in your SQL credentials (DB_NAME, DB_USER, DB_PW) so your application will have access to your SQL user.
 
   ## Usage
 
-  To start the server use the command `node server.js`. Once it is running you can view all of routes in an API client like Insomnia Core. Below is a video demonstrating all of the routes created for this project. 
+  To start the server use the command `node server.js`. Once it is running you can view all of routes in an API client like Insomnia Core. Below is a video demonstrating the installation steps and all of the routes created for this project. 
 
   ![Application Walkthrough GIF](https://github.com/Thenlie/e-commerce-back-end/blob/main/media/video-walkthrough.gif)  
   
+  [Link to application walkthrough video](https://drive.google.com/file/d/1toYWGJ49L9nh8j6WGYByPpEs_UTBSPUE/view?usp=sharing)
+
   ## License
   
   
