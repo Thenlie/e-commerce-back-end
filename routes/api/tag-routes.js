@@ -61,7 +61,13 @@ router.put('/:id', (req, res) => {
       id: req.params.id
     }
   })
-  .then(dbTagData => res.json(dbTagData))
+  .then(dbTagData => {
+    if (!dbTagData) {
+      res.status(404).json({ message: 'No tag with that id!' });
+      return;
+    }
+    res.json(dbTagData)
+  })
   .catch(err => {
     console.log(err)
     res.status(500).json(err)
@@ -75,7 +81,13 @@ router.delete('/:id', (req, res) => {
       id: req.params.id
     }
   })
-  .then(dbTagData => res.json(dbTagData))
+  .then(dbTagData => {
+    if (!dbTagData) {
+      res.status(404).json({ message: 'No tag with that id!' });
+      return;
+    }
+    res.json(dbTagData)
+  })
   .catch(err => {
     console.log(err)
     res.status(500).json(err)
